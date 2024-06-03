@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Timetable</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e79898;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .timetable {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #5bdddd;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #67b967;
+    }
+
+    th {
+      background-color: #de0d9f;
+    }
+
+    .time-column {
+      width: 100px;
+      min-width: 100px;
+    }
+
+    .activity-column {
+      width: calc(100% - 100px);
+    }
+
+    @media screen and (max-width: 600px) {
+      .time-column {
+        width: 80px;
+        min-width: 80px;
+      }
+
+      .activity-column {
+        width: calc(100% - 80px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="timetable">
+  <table>
+    <thead>
+      <tr>
+        <th class="time-column">Time</th>
+        <th class="activity-column">Activity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time-column">7:00 AM</td>
+        <td class="activity-column">wake up</td>
+      </tr>
+      <tr>
+        <td class="time-column">8:00 AM</td>
+        <td class="activity-column">morning Exercise</td>
+      </tr>
+      <tr>
+        <td class="time-column">10:00 AM</td>
+        <td class="activity-column">breakfast</td>
+      </tr>
+      <tr>
+        <td class="time-column">11:00 AM</td>
+        <td class="activity-column">work/study</td>
+      </tr>
+      <tr>
+        <td class="time-column">2:00 PM</td>
+        <td class="activity-column">lunch</td>
+      </tr>
+      <tr>
+        <td class="time-column">3:00 PM</td>
+        <td class="activity-column">extra caricular activity</td>
+      </tr>
+      <tr>
+        <td class="time-column">6:00 PM</td>
+        <td class="activity-column">Exercise</td>
+      </tr>
+      <tr>
+        <td class="time-column">7:00 PM</td>
+        <td class="activity-column">dinner</td>
+      </tr>
+      <tr>
+        <td class="time-column">8:00 PM</td>
+        <td class="activity-column">work/study</td>
+      </tr>
+      <tr>
+        <td class="time-column">11:00 PM</td>
+        <td class="activity-column">video games</td>
+      </tr>
+      <tr>
+        <td class="time-column">12:00 PM</td>
+        <td class="activity-column">sleep</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
